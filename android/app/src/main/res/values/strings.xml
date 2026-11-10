@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Cannabis Bibliothek</string>
+    <string name="title_activity_main">Cannabis Bibliothek</string>
+    <string name="package_name">de.cannabisbibliothek.app</string>
+    <string name="custom_url_scheme">de.cannabisbibliothek.app</string>
+</resources>

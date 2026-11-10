@@ -1,0 +1,24 @@
+{
+  "name": "cannabis-bibliothek",
+  "productName": "Cannabis Bibliothek",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-Bibliothek für Cannabis-Sorten mit Wirkungsprofilen, Terpenen und Charts.",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . \"Cannabis-Bibliothek\" --platform=win32 --arch=x64 --out=release --overwrite --asar --app-copyright=\"Cannabis Bibliothek\" --win32metadata.FileDescription=\"Cannabis Bibliothek - Strain-Datenbank\" --win32metadata.ProductName=\"Cannabis Bibliothek\"",
+    "android:sync": "cap sync android",
+    "android:apk": "cd android && gradlew assembleDebug"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "@electron/packager": "^20.3.0",
+    "electron": "^45.2.3"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0"
+  }
+}
